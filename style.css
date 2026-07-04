@@ -40,7 +40,9 @@ body {
     /* CORRIGIDO: removido o 'flex-col: column' que causava erro */
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    min-height: 100vh; /* Permite esticar se o conteúdo for gigante */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* HEADER DO TOTEM */
